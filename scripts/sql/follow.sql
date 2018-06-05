@@ -1,8 +1,8 @@
 -- DROP TABLE IF EXISTS user_follow_show;
 
 CREATE TABLE user_follow_show (
-  user_id INTEGER REFERENCES users(user_id) NOT NULL,
-  show_id INTEGER REFERENCES show(show_id) NOT NULL,
+  user_id INTEGER REFERENCES users(user_id),
+  show_id INTEGER REFERENCES show(show_id),
   follow_date TIMESTAMP
 );
 
