@@ -1,5 +1,8 @@
+ABSOLUTE_PATH='$(pwd)/csv/';
+
+psql --username=admin -c '\set absolutePath $ABSOLUTE_PATH;'
 psql  --username=admin -f sql/database.sql
-sudo psql shows --username=admin\
+psql shows --username=admin\
     -f sql/show.sql\
     -f sql/episode.sql\
     -f sql/user.sql\
