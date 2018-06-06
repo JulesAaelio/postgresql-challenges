@@ -8,4 +8,4 @@ CREATE TABLE user_rate_show (
 );
 
 
-COPY user_rate_show FROM :absolutePath +'/user_rate_show.csv' DELIMITER ',' CSV HEADER;
+COPY user_rate_show FROM :absolutePath/user_rate_show.csv' DELIMITER ',' CSV HEADER;

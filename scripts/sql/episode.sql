@@ -7,4 +7,4 @@ CREATE  TABLE episode (
 );
 
 
-COPY episode FROM :absolutePath+'/episode.csv' DELIMITER ',' CSV HEADER;
+COPY episode FROM :absolutePath/episode.csv' DELIMITER ',' CSV HEADER;
