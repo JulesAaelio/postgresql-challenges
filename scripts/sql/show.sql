@@ -7,4 +7,5 @@ CREATE TABLE show (
   network VARCHAR(50)
 );
 
-COPY show FROM :absolutePath/show.csv' DELIMITER ',' CSV HEADER;
+\set fullpath :absolutePath/show.csv
+COPY show FROM :'fullpath' DELIMITER ',' CSV HEADER;

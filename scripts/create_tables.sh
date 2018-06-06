@@ -4,7 +4,7 @@ psql    --username=admin\
         -f sql/database.sql
 
 psql shows --username=admin\
-    --set=absolutePath="'$ABSOLUTE_PATH"\
+    --set=absolutePath="$ABSOLUTE_PATH"\
     -f sql/disableForKey.sql\
     -f sql/show.sql\
     -f sql/episode.sql\

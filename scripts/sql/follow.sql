@@ -6,4 +6,9 @@ CREATE TABLE user_follow_show (
   follow_date TIMESTAMP
 );
 
-COPY user_follow_show FROM :absolutePath/user_follow_show.csv' DELIMITER ',' CSV HEADER;
+ALTER TABLE "user_follow_show" DISABLE TRIGGER ALL;
+
+\set fullpath :absolutePath/user_follow_show.csv
+COPY user_follow_show FROM :'fullpath' DELIMITER ',' CSV HEADER;
+
+ALTER TABLE "user_follow_show" ENABLE TRIGGER ALL;

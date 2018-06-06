@@ -8,4 +8,5 @@ CREATE TABLE users (
   password VARCHAR(255)
 );
 
-COPY users FROM :absolutePath/user.csv' DELIMITER ',' CSV HEADER;
+\set fullpath :absolutePath/user.csv
+COPY users FROM :'fullpath' DELIMITER ',' CSV HEADER;

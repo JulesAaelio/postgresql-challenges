@@ -1,4 +1,5 @@
 DROP DATABASE IF EXISTS shows;
 CREATE DATABASE shows;
+\c shows;
 DROP SCHEMA public CASCADE;
 CREATE SCHEMA public;

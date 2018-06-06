@@ -6,5 +6,5 @@ CREATE  TABLE episode (
   date TIMESTAMP
 );
 
-
-COPY episode FROM :absolutePath/episode.csv' DELIMITER ',' CSV HEADER;
+\set fullpath :absolutePath/episode.csv
+COPY episode FROM :'fullpath' DELIMITER ',' CSV HEADER;

@@ -1,2 +1,0 @@
-ALTER TABLE "user_follow_show" ENABLE TRIGGER ALL;
-ALTER TABLE "user_rate_show" ENABLE TRIGGER ALL;

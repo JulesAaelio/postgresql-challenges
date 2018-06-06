@@ -7,5 +7,10 @@ CREATE TABLE user_rate_show (
   rate_date TIMESTAMP
 );
 
+ALTER TABLE "user_rate_show" DISABLE TRIGGER ALL;
 
-COPY user_rate_show FROM :absolutePath/user_rate_show.csv' DELIMITER ',' CSV HEADER;
+\set fullpath :absolutePath/user_rate_show.csv
+COPY user_rate_show FROM :'fullpath' DELIMITER ',' CSV HEADER;
+
+
+ALTER TABLE "user_rate_show" ENABLE TRIGGER ALL;
