@@ -7,4 +7,4 @@ CREATE TABLE show (
   network VARCHAR(50)
 );
 
-COPY show FROM '/mnt/c/Users/Jules LAURENT/Documents/1-YNOV/2-B2/16-POSTGRESQL/csv2/show.csv' DELIMITER ',' CSV HEADER;
+COPY show FROM :absolutePath + '/show.csv' DELIMITER ',' CSV HEADER;

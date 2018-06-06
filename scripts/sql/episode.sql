@@ -7,4 +7,4 @@ CREATE  TABLE episode (
 );
 
 
-COPY episode FROM '/mnt/c/Users/Jules LAURENT/Documents/1-YNOV/2-B2/16-POSTGRESQL/csv2/episode.csv' DELIMITER ',' CSV HEADER;
+COPY episode FROM :absolutePath+'/episode.csv' DELIMITER ',' CSV HEADER;

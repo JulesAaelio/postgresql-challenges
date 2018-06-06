@@ -1,8 +1,11 @@
-ABSOLUTE_PATH='$(pwd)/csv/';
+ABSOLUTE_PATH=$(pwd)+/csv/;
 
-psql --username=admin -c '\set absolutePath $ABSOLUTE_PATH;'
-psql  --username=admin -f sql/database.sql
+
+psql    --username=admin\
+        -f sql/database.sql
+
 psql shows --username=admin\
+    --set=absolutePath="'$ABSOLUTE_PATH'"\
     -f sql/show.sql\
     -f sql/episode.sql\
     -f sql/user.sql\

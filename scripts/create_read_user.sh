@@ -14,8 +14,8 @@ psql --username=admin \
 
 acl="local all $new_username md5"
 toadd="1s/^/$acl\n/"
-sudo sed -i "$toadd" /etc/postgresql/10/main/pg_hba.conf
+sed -i "$toadd" /etc/postgresql/10/main/pg_hba.conf
 
 echo *:*:*:$new_username:$new_password_unquoted >> ~/.pgpass
 chmod 600 ~/.pgpass
-sudo service postgresql restart
+service postgresql restart

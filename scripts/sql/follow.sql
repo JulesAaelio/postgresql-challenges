@@ -6,4 +6,4 @@ CREATE TABLE user_follow_show (
   follow_date TIMESTAMP
 );
 
-COPY user_follow_show FROM '/mnt/c/Users/Jules LAURENT/Documents/1-YNOV/2-B2/16-POSTGRESQL/csv2/user_follow_show.csv' DELIMITER ',' CSV HEADER;
+COPY user_follow_show FROM :absolutePath +'/user_follow_show.csv' DELIMITER ',' CSV HEADER;
