@@ -1,0 +1,2 @@
+ALTER TABLE "user_follow_show" DISABLE TRIGGER ALL;
+ALTER TABLE "user_rate_show" DISABLE TRIGGER ALL;
