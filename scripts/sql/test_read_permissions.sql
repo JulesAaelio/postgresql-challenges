@@ -1,0 +1,2 @@
+SELECT * FROM users LIMIT 5;
+INSERT INTO users(user_id, registration_date, firstname, lastname, email, password) VALUES (160192323,'2017-10-19 01:05:07','Philippine','Marques','leroux.edouard@laroche.fr','quovitae74');

@@ -1,0 +1,5 @@
+DROP ROLE IF EXISTS reader;
+
+CREATE ROLE reader;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO reader;
+

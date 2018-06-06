@@ -1,0 +1,1 @@
+psql shows --username=read_only -f 'sql/test_read_permissions.sql'
