@@ -10,4 +10,4 @@ fi
 
 psql shows --username=admin\
         --set=backupPath="'$BACKUP_PATH"\
-        -f sql/backupAll.sql\
+        -f sql/backupAll.sql
